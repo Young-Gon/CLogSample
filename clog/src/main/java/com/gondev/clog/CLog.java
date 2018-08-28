@@ -11,17 +11,14 @@ public class CLog
 	{
 	}
 
-
 	public static int v(String _msg)
 	{
-		return v(_msg, 5);
+		return v(_msg, 1);
 	}
 
 	public static int v(String _msg, int deepth)
 	{
-		if (!BuildConfig.DEBUG)
-			return -1;
-
+		deepth+=4;
 		if (TextUtils.isEmpty(_msg))
 			return Log.e(makeTag(deepth), "CLog message parameter is empty!!");
 
@@ -30,31 +27,26 @@ public class CLog
 
 	public static int d(String _msg)
 	{
-		return d(_msg, 5);
+		return d(_msg, 1);
 	}
 
 	public static int d(String _msg, int deepth)
 	{
-		if (!BuildConfig.DEBUG)
-			return -1;
-
+		deepth+=4;
 		if (TextUtils.isEmpty(_msg))
 			return Log.e(makeTag(deepth), "CLog message parameter is empty!!");
 
 		return Log.d(makeTag(deepth), _msg);
 	}
 
-
 	public static int i(String _msg)
 	{
-		return i(_msg, 5);
+		return i(_msg, 1);
 	}
 
 	public static int i(String _msg, int deepth)
 	{
-		if (!BuildConfig.DEBUG)
-			return -1;
-
+		deepth+=4;
 		if (TextUtils.isEmpty(_msg))
 			return Log.e(makeTag(deepth), "CLog message parameter is empty!!");
 
@@ -63,14 +55,12 @@ public class CLog
 
 	public static int w(String _msg)
 	{
-		return w(_msg, 5);
+		return w(_msg, 1);
 	}
 
 	public static int w(String _msg, int deepth)
 	{
-		if (!BuildConfig.DEBUG)
-			return -1;
-
+		deepth+=4;
 		if (TextUtils.isEmpty(_msg))
 			return Log.e(makeTag(deepth), "CLog message parameter is empty!!");
 
@@ -79,14 +69,12 @@ public class CLog
 
 	public static int e(String _msg)
 	{
-		return e(_msg, 5);
+		return e(_msg, 1);
 	}
 
 	public static int e(String _msg, int deepth)
 	{
-		if (!BuildConfig.DEBUG)
-			return -1;
-
+		deepth+=4;
 		if (TextUtils.isEmpty(_msg))
 			return Log.e(makeTag(deepth), "CLog message parameter is empty!!");
 
@@ -95,14 +83,12 @@ public class CLog
 
 	public static int e(String _msg, Throwable th)
 	{
-		return e(_msg, th, 5);
+		return e(_msg, th, 1);
 	}
 
 	public static int e(String _msg, Throwable th, int deepth)
 	{
-		if (!BuildConfig.DEBUG)
-			return -1;
-
+		deepth+=4;
 		if (TextUtils.isEmpty(_msg))
 			return Log.e(makeTag(deepth), "CLog message parameter is empty!!");
 
