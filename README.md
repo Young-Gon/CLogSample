@@ -1,3 +1,4 @@
+[![](https://jitpack.io/v/Young-Gon/CLogSample.svg)](https://jitpack.io/#Young-Gon/CLogSample)
 # CLogSample #
 
 로그켓의 Tag항목에 로그가 작성된 위치를 표시해 줍니다. 또한 그 항목으로 바로 갈수 있는 링크도 제공 되기 때문에 빠르게 소스 코드 상에서 로그를 찾아
