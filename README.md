@@ -27,14 +27,14 @@ allprojects {
     repositories {
         google()
         jcenter()
-        maven{url "https://gondev.bintray.com/yg1027/"}
+        maven { url 'https://jitpack.io' }
     }
 }
 ```
 
 ```gradle
 dependencies {
-    releaseImplementation 'com.gondev.clog:clog:1.0@aar'
-    debugImplementation 'com.gondev.clog-debug:clog:1.0@aar'
+    releaseImplementation 'com.github.Young-Gon:CLogSample:0.1'
+    debugImplementation 'com.github.Young-Gon:CLogSample:0.1-debug'
 }
 ```
